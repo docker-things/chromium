@@ -3,6 +3,8 @@ MAINTAINER Gabriel Ionescu <gabi.ionescu+dockerthings@protonmail.com>
 
 RUN apt-get update \
  && apt-get install -y --no-install-recommends \
+        ubuntu-restricted-extras \
+        libavcodec-extra \
         ca-certificates \
         curl \
         dirmngr \
