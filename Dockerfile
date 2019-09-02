@@ -33,5 +33,4 @@ RUN apt-get update \
 USER $DOCKER_USERNAME
 
 # ENTRYPOINT
-ENTRYPOINT /usr/bin/chromium-browser
-
+ENTRYPOINT rm -rf /home/$DOCKER_USERNAME/.config/chromium/SingletonLock && /usr/bin/chromium-browser
