@@ -11,7 +11,6 @@ RUN apt-get update \
         gnupg \
         libasound2 \
         libdbus-glib-1-2 \
-        libgtk-3-0 \
         libgl1-mesa-dri \
         libgl1-mesa-glx \
         libxrender1 \
