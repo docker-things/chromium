@@ -13,8 +13,10 @@ FIFO_PATH="/tmp/docker-things/fifo"
 PROJECT_NAME="chromium"
 
 # Meta to set in the .desktop file
+APP_GENERIC_NAME="Web Browser"
 APP_CATEGORIES="Network;WebBrowser;"
 APP_MIME_TYPE="text/html;text/xml;application/xhtml_xml;image/webp;x-scheme-handler/http;x-scheme-handler/https;x-scheme-handler/ftp;"
+APP_PARAM="%U"
 
 # BUILD ARGS
 BUILD_ARGS=(
