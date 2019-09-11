@@ -28,10 +28,11 @@ RUN apt-get update \
 # ENV LIBGL_ALWAYS_SOFTWARE 1
 # ENV LIBGL_DEBUG verbose
 
-RUN ln -s /usr/bin/chromium-browser /usr/bin/chromium
+COPY install/chromium /usr/bin/chromium
+RUN chmod +x /usr/bin/chromium
 
 # SET USER
 USER $DOCKER_USERNAME
 
 # ENTRYPOINT
-ENTRYPOINT ["rm -rf /home/$DOCKER_USERNAME/.config/chromium/SingletonLock && /usr/bin/chromium"]
+ENTRYPOINT ["/usr/bin/chromium"]
