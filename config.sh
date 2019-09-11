@@ -12,6 +12,10 @@ FIFO_PATH="/tmp/docker-things/fifo"
 # The name of the docker image
 PROJECT_NAME="chromium"
 
+# Meta to set in the .desktop file
+APP_CATEGORIES="Network;WebBrowser;"
+APP_MIME_TYPE="text/html;text/xml;application/xhtml_xml;image/webp;x-scheme-handler/http;x-scheme-handler/https;x-scheme-handler/ftp;"
+
 # BUILD ARGS
 BUILD_ARGS=(
     )
