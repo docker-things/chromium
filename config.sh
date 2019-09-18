@@ -30,7 +30,7 @@ RUN_ARGS=(
     -v $XAUTHORITY:/tmp/.Xauthority
     -e XAUTHORITY=/tmp/.Xauthority
 
-    --memory="4g"
+    --memory="6g"
     --cpu-shares=1024
     --shm-size 2g
 
